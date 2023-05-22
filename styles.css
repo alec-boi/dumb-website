@@ -9,9 +9,8 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    min-width: 375px;
     padding: 1.5vw 10%;
-    white-space: nowrap;
 }
 
 .navbar .nav_container .nav_links li {
@@ -22,7 +21,7 @@ header {
 .nav_links li a {
     font-family: 'Montserrat', 'sans-serif';
     font-weight: 400;
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: #000;
     list-style-type: none;
     text-decoration: none;
@@ -74,7 +73,7 @@ label {
 input {
     display: block;
     height: 5vh;
-    width: 100%;
+    min-width: 375px;
     background: none;
     border: none;
     border-bottom: .1vw solid #000;
@@ -120,7 +119,7 @@ button:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 70vw;
+    width: 90vw;
     height: auto;
     margin: 1.3vw auto 0;
     line-height: 1.5;
@@ -130,7 +129,7 @@ button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-width: 26vw;
+    min-width: 30vw;
 }
 
 .text-div {
