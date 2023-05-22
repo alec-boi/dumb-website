@@ -2,8 +2,6 @@
 
 * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
     background-color: #fff;
 }
 
@@ -35,6 +33,12 @@ header {
     letter-spacing: 1.5px;
 }
 
+.login_form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 form {
     height: 665px;
     width: 400px;
@@ -59,6 +63,7 @@ fieldset {
 }
 
 label {
+    font-family: 'Montserrat', 'sans-serif';
     display: block;
     margin-top: 30px;
     font-size: 15px;
@@ -139,6 +144,7 @@ button:hover {
 .title {
     font-family: 'Montserrat', 'sans-serif';
     padding-bottom: 20px;
+    text-align: center;
 }
 
 .content-text {
