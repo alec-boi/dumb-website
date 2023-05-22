@@ -16,6 +16,7 @@ header {
 .navbar .nav_container .nav_links li {
     display: inline-block;
     padding: 0 2vw;
+    white-space: nowrap;
 }
 
 .nav_links li a {
