@@ -11,12 +11,12 @@ header {
     justify-content: center;
     width: 100%;
     padding: 1.5vw 10%;
+    white-space: nowrap;
 }
 
 .navbar .nav_container .nav_links li {
     display: inline-block;
     padding: 0 2vw;
-    white-space: nowrap;
 }
 
 .nav_links li a {
