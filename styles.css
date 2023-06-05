@@ -19,14 +19,17 @@
 }
 
 header {
+    position: relative;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     width: 100%;
-    height: 48px;
-    background-color: #fff;
+    padding: 30px 10%;
+    background: #fff;
     box-shadow: 0 0 15px rgba(0,0,0,0.3);
 }
+
+.navbar {padding-bottom: 10px;}
 
 .nav_links li {
     display: inline-block;
@@ -35,10 +38,12 @@ header {
 }
 
 .nav_links li a {
+    position: relative;
     font-family: 'Montserrat', 'sans-serif';
     font-weight: 400;
     font-size: 16px;
     color: #000;
+    list-style-type: none;
     text-decoration: none;
     transition: all 0.3s ease 0s;
 }
@@ -237,26 +242,25 @@ button:hover {
 @media (max-width: 600px) {
     .header {
         align-items: flex-start;
-        white-space: nowrap;
         padding: 10px;
+    }
+
+    .navbar {
+        white-space: nowrap;
     }
 
     .navbar .nav_container .nav_links li {
         display: inline-block;
-        padding: 0 25px;
+        margin: 0 25px;
     }
 
     .nav_links li a {
-        font-size: 2rem;
+        font-size: 1.5rem;
         font-weight: 600;
     }
 
     .content {
         padding: 0 15px 0;
-    }
-
-    .navbar .nav_container .nav_links li {
-        padding: 0 20px;
     }
 
     .nav_links li a {
