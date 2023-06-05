@@ -4,7 +4,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    cursor: none;
+    cursor: url("./images/cursor.png"), auto;
 }
 
 .container {
@@ -13,60 +13,39 @@
     justify-content: center;
 }
 
-.content > .title {
+.content .title {
     text-align: center;
     padding-top: 45px;
 }
 
 header {
-    position: relative;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     width: 100%;
-    padding: 30px 10%;
-    background: #fff;
+    height: 48px;
+    background-color: #fff;
     box-shadow: 0 0 15px rgba(0,0,0,0.3);
-    z-index: 0;
 }
 
-.navbar {padding-bottom: 10px;}
-
-.nav_links > li {
+.nav_links li {
     display: inline-block;
     margin: 0 45px;
+    list-style-type: none;
 }
 
-.nav_links > li > a {
-    position: relative;
+.nav_links li a {
     font-family: 'Montserrat', 'sans-serif';
     font-weight: 400;
     font-size: 16px;
     color: #000;
-    list-style-type: none;
     text-decoration: none;
     transition: all 0.3s ease 0s;
 }
 
-.cursor {
-    position: fixed;
-    width: 20px;
-    height: 20px;
-    background: #000;
-    border-radius: 50%;
-    pointer-events: none;
-    mix-blend-mode: difference;
-    transform: translate(-50%, -50%);
-    z-index: 10;
-}
-
-.nav_links > li:hover {
-    font-weight: 600;
+.nav_links li:hover, li a span:hover {
     letter-spacing: 1.5px;
-}
-
-.nav_links > li:hover ~ .cursor {
-    transform: translate(-50%, -50%) scale(4);
+    cursor: url("./images/cursor2.png"), auto;
 }
 
 form {
@@ -75,6 +54,7 @@ form {
     border-radius: 20px;
     box-shadow: 0 0 15px rgba(0,0,0,0.5);
     padding: 50px 35px;
+    margin-top: 30px;
 }
 
 .img-container {
@@ -82,11 +62,13 @@ form {
     margin: 10px 0 10px 0;
 }
 
-.img-container > img {
+.img-container  img {
     border-radius: 50%;
     box-shadow: 0 0 15px rgba(0,0,0,0.5);
 
 }
+
+.music-img {cursor: url("./images/cursor4.png"), auto;}
 
 fieldset {
     border: none;
@@ -114,6 +96,7 @@ input {
     outline: none;
     color: #000;
     padding: 10px;
+    cursor: url("./images/cursor3-.png"), auto;
 }
 
 input:focus {
@@ -139,6 +122,7 @@ button {
     font-weight: 400;
     border-radius: 5px;
     transition: all 0.3s ease 0s;
+    cursor: url("./images/cursor3.png"), auto;
 }
 
 button:hover {
@@ -176,7 +160,13 @@ button:hover {
     padding: 10px 45px 20px;
 }
 
-.title > .typed1 {
+.title a {
+    text-decoration: none;
+    color: #000;
+    cursor: url("./images/cursor3-.png"), auto;
+}
+
+.title .typed1 {
     line-height: 1.5;
 }
 
@@ -199,36 +189,55 @@ button:hover {
     box-shadow: 0 0 15px rgba(0,0,0,0.1);
 }
 
-.suggestions {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: #000;
-  font-family: 'Special Elite';
-  color: #fff;
+.card-img:hover {
+    cursor: url("./images/cursor2.png"), auto;
 }
 
-.suggestions > .title {
+.suggestions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    background-color: #000;
+    font-family: 'Special Elite';
+    color: #fff;
+    cursor: url("./images/cursor3.png"), auto;
+}
+
+.suggestions .title {
   font-family: 'Special Elite';
   font-size: 36px;
 }
 
-.suggestions > ul > li, a {
-  padding-left: 15px;
-  text-decoration: none;
-  line-height: 2;
-  font-weight: 600;
-  color: #fff;
+.suggestions .title a {
+    font-family: 'Special Elite';
+    color: #fff;
+    font-size: 36px;
 }
 
-.suggestions > ul > li, a:last-of-type {
-  padding-bottom: 30px;
+.suggestions ul li {
+    cursor: url("./images/cursor3.png"), auto;
+    padding-bottom: 15px;
+}
+
+.suggestions ul li a {
+    padding-left: 15px;
+    text-decoration: none;
+    line-height: 2;
+    font-weight: 600;
+    color: #fff;
+    cursor: url("./images/cursor4.png"), auto;
+}
+
+.suggestions ul li a:last-of-type {
+    padding-bottom: 20px;
 }
 
 @media (max-width: 600px) {
-    header {
+    .header {
         align-items: flex-start;
+        white-space: nowrap;
         padding: 10px;
     }
 
@@ -240,11 +249,6 @@ button:hover {
     .nav_links li a {
         font-size: 2rem;
         font-weight: 600;
-    }
-
-    header {
-        align-items: flex-start;
-        white-space: nowrap;
     }
 
     .content {
