@@ -1,5 +1,5 @@
 # html-study
-Dumb static site study where I put cool stuff\r\n
+Dumb static site study where I put cool stuff<br>
 https://alec-boi.github.io/dumb-website/index.html
 
 # sources
