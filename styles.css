@@ -419,13 +419,13 @@ button:hover {
     }
 
     .media-item {
-        height: 350px;
-        padding: 5px;
+        height: 370px;
+        padding: 10px;
         margin-bottom: 5px;
     }
 
     .media-item:hover {
-        height: 350px;
+        height: 370px;
     }
 
     .media-item p {
