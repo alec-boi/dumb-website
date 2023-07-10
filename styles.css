@@ -409,7 +409,7 @@ button:hover {
 
     .media-scroller {
         grid-auto-columns: 90%;
-        height: 50vh;
+        height: 52vh;
         padding: 0 25px 25px;
         gap: 25px;
     }
