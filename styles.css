@@ -278,7 +278,7 @@ button:hover {
 }
 
 .media-item {
-    height: 350px;
+    height: 320px;
     padding: 15px;
     background-color: #000;
     border-radius: 25px;
@@ -296,7 +296,7 @@ button:hover {
 }
 
 .media-item p:nth-of-type(2) {
-    padding-top: 26px;
+    padding-top: 20px;
 }
 
 .media-item img {
@@ -407,6 +407,7 @@ button:hover {
         font-size: 2rem;
     }
 
+    /* fixed? */
     .media-scroller {
         grid-auto-columns: 90%;
         height: 52vh;
