@@ -413,7 +413,6 @@ button:hover {
         height: 52vh;
         padding: 0 25px 25px;
         gap: 25px;
-        overflow: hidden;
     }
 
     .media-scroller-div .title {
